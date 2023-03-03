@@ -20,41 +20,48 @@ export const  Navbar = () => {
 
         if(currentTheme ==="dark"){
           return (
-            <SunIcon className=" bg-orange-500 hidden mt-1 h-10 w-10 shadow-lg lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:text-white hover:bg-black dark:text- dark:hover:bg-stone-400 dark:inline-flex float-right" role="button" onClick={() => setTheme('light')}/>
+            <SunIcon className=" w-7 h-7 ml-5" role="button" onClick={() => setTheme('light')}/>
           )
         }
 
         else {
           return (
-            <MoonIcon className=" bg-orange-500 mt-1 h-10 w-10 inline-flex shadow-lg lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:text-white hover:bg-black dark:text-black dark:hidden float-right" role="button" onClick={() => setTheme('dark')}/>
+            <MoonIcon className=" w-7 h-7 ml-5" role="button" onClick={() => setTheme('dark')}/>
           )
         }
      };
-
+     let Links = [
+      { name: "Home", link: "/" },
+      { name: "About Us", link: "/about" },
+      { name: "Contact Us", link: "/contacts" },
+    ]
 
     return (
-        <nav className='bg-orange-500 sticky z-30 top-0 text-center p-3 w-full text-lg border-b-2 border-black dark:bg-orange-700'>
-
-            <Link href="/">
-                <a className="float-left lg:w-auto items-center justify-center">
-                    <Image
-                        src={logo}
-                        alt="Picture of the logo"
-                        width={(50)}
-                        height={50}
-                    />
-                </a>
-            </Link>
-
-            <Link href="/about">
-                <a className="bg-orange-500 inline-flex mx-6 shadow-lg lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-black hover:text-white dark:text-black dark:hover:bg-stone-400">About</a>
-            </Link>
-
-            <Link href="/contacts">
-                <a className=" bg-orange-500 inline-flex mx-6 shadow-lg lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-black hover:text-white dark:text-black dark:hover:bg-stone-400">Contacts</a>
-            </Link>
-
-            {renderThemeChanger()}
-        </nav>
+      <div>
+    < nav className="md:flex md:items-center md:justify-between mx-auto py-3 md:px-8 px-2 bg-bleu dark:bg-gray-800" >
+      < div className="flex items-center " >
+        < Image src={logo}
+          width="100px"
+          height="50px"
+          alt="my-blog"
+        />
+        <span>
+          {renderThemeChanger()}
+        </span>
+      </div >
+      <ul className=" items-center md:space-x-20 md:flex dark:text-white">
+        {
+          Links.map((items) => (
+            <div key={items.name}>
+              <li>
+                <h3 className=" rounded hover:text-black text-l"><Link href={items.link}>{items.name}</Link></h3>
+              </li>
+            </div>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+        
     );
 }
