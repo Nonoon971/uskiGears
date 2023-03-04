@@ -1,6 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.wt-title {
-    @apply  text-3xl text-cyan-600 font-bold underline mb-10;
-  }
+
+
+@font-face {
+  font-family: "SNOWKY";
+  src: url("../public/fonts/snowkybrush.ttf");
+
+}
+@font-face {
+  font-family: "Christmas";
+  src: url("../public/fonts/Snowy\ Christmas\ -\ Personal\ Use.otf");
+}
