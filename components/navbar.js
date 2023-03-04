@@ -59,11 +59,11 @@ export const  Navbar = () => {
       </div>
 
       <div className={`md:flex items ${showLinks ? 'block' : 'hidden'}`}>
-        <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
           {Links.map((link) => (
             <li key={link.name} className="md:my-0 my-1">
               <Link href={link.link}>
-                <a className="md:mx-4 px-3 py-2 text-black hover:text-gray-500 font-medium rounded-md">{link.name}</a>
+                <a className="md:mx-4 px-3 py-2 text-black hover:text-gray-500 dark:text-white dark:hover:text-gray-600 font-medium rounded-md">{link.name}</a>
               </Link>
             </li>
           ))}
