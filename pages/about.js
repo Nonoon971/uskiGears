@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import Image from 'next/image';
 import logo from '../content/images/equipement.jpg'
+import affiche from '../content/images/Affiche.png'
 
 export default function About() {
   return (
@@ -13,24 +14,17 @@ export default function About() {
       </Head>
       <div className='relative overflow-hidden block border-b-2 border-black w-full bg-accueilphone bg-no-repeat bg-cover  md:bg-accueil'>
         <div className='justify-center flex ' id='accueil'>
-          <div className=' mx-12 my-0 min-w-0 max-w-6xl w-full block '>
+          <div className=' mx-12 my-0 min-w-0 max-w-6xl block md:pb-32 '>
             <div className=' mb-12 block m-auto md:text-center' id='titre'>
-              <h1 className="text-4xl mt-24  md:text-7xl font-snowky text-black font-bold m-4 block tracking-wide rounded">
+              <h1 className="text-4xl mt-24  md:text-7xl font-snowky text-black text-opacity-85 m-4 block tracking-wide rounded">
                 U ski together !
               </h1>
-              <p className=' text-3xl font-chritsmas font-bold text-black rounded'>
+              <p className=' text-3xl md:text-4xl font-chritsmas font-medium p-1  m-auto bg-opacity-50 bg-white text-black rounded-lg'>
                 Nous sommes une entreprise de vente de skis qui favorise la puissance, la solidité,  le calme et la performance. <br></br>
-
               </p>
-            </div>
-            <div className='flex-row flex w-full'>
-              <div className=' w-96 z-10 flex-col h-full pb-24 flex dark:text-black'>
-
-                <div className=' w-4/5 mb-12 block'>
-
-
-                </div>
-              </div>
+              <button className='bg-blue-500 mt-2 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full'>
+                <a href='/brochure.pdf' download="brochure">Retrouvez notre brochure</a>
+              </button>
             </div>
           </div>
         </div>
@@ -44,18 +38,34 @@ export default function About() {
             </h2>
           </div>
         </div>
-        <div className='invisible md:visible md:max-w-lg mx-auto overflow-hidden rounded-lg shadow-xl'>
-            <Image
-              src={logo}
-              alt="Picture of the player"
-              height={438}
-              width={600}
-            />
-          </div>
+        <div className='hidden md:block md:max-w-lg mx-auto overflow-hidden rounded-lg shadow-xl'>
+          <Image
+            src={logo}
+            alt="Picture of the player"
+            height={438}
+            width={600}
+          />
+        </div>
       </div>
       <hr className='h-1 bg-black'></hr>
       <hr className='h-1 bg-black'></hr>
-
+      <div className='relative py-5 px-5 ml-auto mr-auto w-full md:grid-cols-2 lg:gap-x-16 grid items-center grid-cols-1 bg-slate-50'>
+        <div className='hidden md:block md:max-w-lg mx-auto overflow-hidden rounded-lg shadow-xl'>
+          <Image
+            src={affiche}
+            alt="Picture of the player"
+            height={438}
+            width={500}
+          />
+        </div>
+        <div className='flex items-center'>
+          <div>
+            <h2 className='text-3xl text-center md:text-5xl font-chritsmas mb-8'>
+              Notre équipe assure, par notre énergie, notre expertise et notre professionnalisme, un service d’exception pour satisfaire toujours plus nos clients.
+            </h2>
+          </div>
+        </div>
+      </div>
       {/*
       <div class="flex bg-white shadow-lg rounded-lg mx-4 md:mx-auto my-56 max-w-md md:max-w-2xl content-center ">
         <div class="flex items-start px-4 py-6">
