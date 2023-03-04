@@ -1,6 +1,13 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
 import Head from 'next/head'
+import title from '../content/images/titre.png'
+import decat from '../content/images/decat.jpg'
+import inter from '../content/images/inter.png'
+import sport2 from '../content/images/sport2.jpg'
+import skimium from '../content/images/skimium.png'
+import skiset from '../content/images/skiset.png'
+import Image from 'next/image';
 
 export default function Home() {
   //regler le padding général et responsive menu hamburger
@@ -13,46 +20,80 @@ export default function Home() {
       </Head>
       <main>
         <div className="relative px-6">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl text-center">  
+          < Image src={title}
+          width="300px"
+          height="150px"
+          alt="my-blog"
+        />
+          </div>
+          <div className="mx-auto max-w-5xl">
+          <h1 className="text-center text-2xl font-bold text-gray-900 mt-10 font-mono">INTERNATIONAL SALES TRENDS & MARKETING AWARDS</h1>
+            <p className="mt-14 md:text-md text-sm md:leading-8 leading-4 text-gray-600 text-center dark:text-gray-400 font-bold">
+            L'événement entend honorer les acteurs les plus innovants dans le domaine des ventes et du marketing, à la fois dans les secteurs B2B et B2C.
+            Le Grand prix est remis par un jury composé de 15 personnalités du monde du marketing et de la communication. Il récompense l’innovation marketing la plus remarquable de l’année
+            </p>
+            <h1 className="text-center text-2xl font-bold text-gray-900 mt-8">04 mars 2023, 19:30  |  The Event Lounge</h1>
             <Link href="/about">
               <div className="flex justify-center">
-                <div className="relative overflow-hidden rounded-full py-1.5 px-4 leading-6 ring-2 ring-gray-700/10 hover:ring-gray-700/20 dark:ring-white dark:hover:ring-gray-300/20 mt-10">
+                <div className="relative overflow-hidden rounded-full  px-4 leading-6 ring-2 ring-gray-700/10 hover:ring-gray-700/20 dark:ring-white dark:hover:ring-gray-300/20 mt-10">
                   <span className="text-gray-600 dark:text-white">
-                    Announcing our motivation  {' '}
+                    Lien de billeterie  {' '}
                     <a className="font-semibold text-bleu">
                       <span className="absolute inset-0" aria-hidden="true" />
-                      Read more <span aria-hidden="true">&rarr;</span>
+                      disponibles <span aria-hidden="true">&rarr;</span>
                     </a>
                   </span>
                 </div>
               </div>
             </Link>
-            <h1 className="mt-16 md:text-5xl text-2xl font-bold tracking-tight text-center ">
-              Presentation of our projects carried out during our studies
-            </h1>
           </div>
-          <div className="mx-auto max-w-6xl">
-            <p className="mt-14 md:text-md text-sm md:leading-8 leading-4 text-gray-600 text-center dark:text-gray-400 font-bold">
-              Welcome to our website showcasing the computer science projects of our talented students. Here, you will find a variety of innovative and interesting
-              projects that demonstrate the skills and creativity of students. Whether you are a fellow student, a teacher, or just someone with a curiosity about
-              technology, we hope you will find something of interest here. Please take a look around and discover the amazing work of students.
-            </p>
-            <div className="mt-24 flex gap-x-4 justify-center">
-              <Link href='/projects'>
-                <a className="inline-block rounded-lg bg-bleu px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-bleu hover:bg-gray-300 hover:ring-gray-300">
-                  Discover our projects
-                  <span className="text-white" aria-hidden="true">&rarr;</span>
-                </a>
-              </Link>
-              <Link href='/contact'>
-                <a className="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-2 ring-gray-900/10 hover:ring-gray-900/30 dark:bg-gray-800 dark:text-white dark:ring-white">
-                  Contact us
-                  <span className="text-black" aria-hidden="true">&rarr;</span>
-                </a>
-              </Link>
-            </div>
-          </div>
+            <div className=" py-2 sm:pt-20">
+      <div className="mx-auto max-w-7xl px-10 lg:px-8">
+        <h2 className="text-center text-lg font-semibold leading-8 text-gray-900">
+        Les acteurs les plus innovants dans la location de skis
+        </h2>
+        <div className="mx-auto mt-6 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src={decat}
+            alt="Transistor"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src={sport2}
+            alt="Reform"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+            src={inter}
+            alt="Tuple"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+            src={skiset}
+            alt="SavvyCal"
+            width={158}
+            height={48}
+          />
+          <Image
+            className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+            src={skimium}
+            alt="Statamic"
+            width={158}
+            height={48}
+          />
         </div>
+      </div>
+    </div>
+          </div>
+        
       </main>
     </Layout>
   )
