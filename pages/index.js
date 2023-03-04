@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>WebTech - Home</title>
-        <meta name="description" content="WebTech home page" />
+        <title>Home</title>
+        <meta name="description" content="Home page" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
         <div className="relative px-6 bg-skiaccueil bg-no-repeat bg-cover">
           <div className="mx-auto max-w-4xl text-center mb-32">
-          <h1 className="text-4xl mt-24  md:text-7xl font-snowky text-black m-4 block tracking-wide rounded">
+          <h1 className="text-4xl md:text-7xl font-snowky text-black block tracking-wide rounded">
               U ski together !
           </h1>
           </div>
