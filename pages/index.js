@@ -28,7 +28,7 @@ export default function Home() {
         />
           </div>
           <div className="mx-auto max-w-5xl">
-          <h1 className="text-center text-2xl font-bold text-gray-900 mt-10 font-mono">INTERNATIONAL SALES TRENDS & MARKETING AWARDS</h1>
+          <h1 className="text-center text-3xl font-bold text-gray-900 mt-10 font-mono">INTERNATIONAL SALES TRENDS & MARKETING AWARDS</h1>
             <p className="mt-14 md:text-md text-sm md:leading-8 leading-4 text-gray-600 text-center dark:text-gray-400 font-bold">
             L'événement entend honorer les acteurs les plus innovants dans le domaine des ventes et du marketing, à la fois dans les secteurs B2B et B2C.
             Le Grand prix est remis par un jury composé de 15 personnalités du monde du marketing et de la communication. Il récompense l’innovation marketing la plus remarquable de l’année
