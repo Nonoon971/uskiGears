@@ -13,12 +13,15 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        'accueil': "url('../content/images/ombres.gif')"
+        'accueil': "url('../content/images/montagnes.gif')",
+        'accueilphone': "url('../content/images/ski.jpg')"
       }
     },
     fontFamily: {
       'test':['gt-super', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'],
-      'sstitre':['sohne', "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif']
+      'sstitre':['sohne', "Helvetica Neue", 'Helvetica', 'Arial', 'sans-serif'],
+      'snowky': ["SNOWKY", "cursive"],
+      'chritsmas' :["Christmas"]
     }
   },
   plugins: [
