@@ -17,7 +17,7 @@ export const Footer = () => {
                     </li>
                 </ul>
                 <span className="  dark:white text-l ">
-                    <a>© 2022 Webtech™. </a>
+                    <a>© 2022 Business Game™. </a>
                     <a className="md:visible invisible">All Rights Reserved.</a>
                 </span>
             </div>
