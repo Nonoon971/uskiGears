@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <div className="flex flex-col h-screen">
         <Navbar />
-        <main className="py-11 mb-auto bg-slate-200 dark:bg-gray-900">{children}</main>
+        <main className="mb-auto bg-slate-200 dark:bg-gray-900">{children}</main>
         <Footer />
       </div>
 
