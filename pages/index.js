@@ -19,21 +19,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="relative px-6">
+        <div className="relative px-6 bg-skiaccueil bg-no-repeat bg-cover">
           <div className="mx-auto max-w-4xl text-center mb-32">
-          <h1 className="text-4xl mt-24  md:text-7xl font-snowky text-black font-bold m-4 block tracking-wide rounded">
+          <h1 className="text-4xl mt-24  md:text-7xl font-snowky text-black m-4 block tracking-wide rounded">
               U ski together !
           </h1>
           </div>
           <div className=''>
           </div>
-          <div className='mb-56'>
+          <div className='md:mb-96 mb-32'>
             <Link href="/about">
               <div className="flex justify-center">
-                <div className="relative overflow-hidden rounded-full  px-4 leading-6 ring-2 ring-gray-700/10 hover:ring-gray-700/20 dark:ring-white dark:hover:ring-gray-300/20 mt-10">
-                  <span className="text-gray-600 dark:text-white">
+                <div className="relative overflow-hidden rounded-full px-4 leading-6 ring-2 ring-gray-700/20 bg-gray-700/20 bg-opacity-40 hover:ring-gray-500 ">
+                  <span className="text-black">
                     Découvrez en plus sur {' '}
-                    <a className="font-semibold text-bleu">
+                    <a className="font-semibold text-black">
                       <span className="absolute inset-0" aria-hidden="true" />
                       USKI <span aria-hidden="true">&rarr;</span>
                     </a>
@@ -42,11 +42,13 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="mx-auto max-w-5xl mb-11">
+          <div className="mx-auto max-w-5xl md:mb-11 mb-32 md:bg-slate-500 md:bg-opacity-70 rounded-full">
             <h1 className="text-center text-3xl font-bold text-gray-900 mt-10 font-mono">Prochain événement</h1>
-              <p className="mt-14 md:text-md text-sm md:leading-8 leading-4 text-gray-600 text-center dark:text-gray-400 font-bold">
+              <p className="mt-14 md:text-md md:leading-8 leading-4 text-black text-center  font-extrabold text-xl">
               Seminaire des collaborateurs
-              Venez le 20 Mai 2026 au rooftop de la tour Montparnass pour rencontrez nos collaborateurs et U can Ski with us !
+              </p>
+              <p className="mt-14 md:text-md text-sm md:leading-8 leading-4 text-gray-700 text-center font-semibold">
+                Venez le 20 Mai 2026 au rooftop de la tour Montparnass pour rencontrez nos collaborateurs et U can Ski with us !
               </p>
             <h1 className="text-center text-2xl font-bold text-gray-900 mt-8">20 mai 2026, 10:30  |  Montparnass Rooftop</h1>
           </div>

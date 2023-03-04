@@ -14,7 +14,8 @@ module.exports = {
     extend: {
       backgroundImage:{
         'accueil': "url('../content/images/montagnes.gif')",
-        'accueilphone': "url('../content/images/ski.jpg')"
+        'accueilphone': "url('../content/images/ski.jpg')",
+        'skiaccueil': "url('../content/images/ski.gif')"
       }
     },
     fontFamily: {
